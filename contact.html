@@ -15,12 +15,29 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="guitars.html">Guitars</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h1>Contact</h1>
+            <form action="submit.php" method="POST">
+                <label for="fullname">Full name</label>
+                <input type="text" name="fullname" id="fullname">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="guitar">Guitar</label>
+                <select id="guitar" name="guitar">
+                    <option name="adirondack-red" value="Adirondack Red">Adirondack Red</option>
+                    <option name="adirondack-blue" value="Adirondack Blue">Adirondack Blue</option>
+                    <option name="adirondack-green" value="Adirondack Green">Adirondack Green</option>
+                </select>
+                <input type="checkbox" name="email-signup" id="email-signup">
+                <label for="email-signup">Sign up for email updates.</label>
+                <label for="message">Message</label>
+                <textarea id="textarea" name="message"></textarea>
+                <input type="submit" name="submit" value="Send Now" class="cta cta_big">
+            </form>
         </main>
         <footer>Copyright &copy;</footer>
     </body>
