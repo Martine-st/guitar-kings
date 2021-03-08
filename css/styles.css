@@ -18,6 +18,15 @@ h2,
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-left: 25px;
+}
+
 nav ul {
   padding: 0px;
 }
@@ -82,17 +91,62 @@ footer {
 .welcome {
   background-image: url("../images/home-header.jpg");
   background-size: cover;
-  min-height: 70vh;
+  background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  min-height: 70vh;
+  position: relative;
+}
+
+.welcome_content {
+  position: absolute;
+  text-align: center;
+  top: 75px;
+  left: 75px;
+}
+
+.selling-points {
+  margin: 50px auto;
+}
+
+.selling-points,
+.reviews_content {
+  max-width: 1000px;
+  display: flex;
+}
+
+.selling-points > *,
+.reviews_content > * {
+  flex: 1;
 }
 
 .selling-points_images {
   border-radius: 100px;
+  width: 100%;
+}
+
+.reviews {
+  text-align: center;
+  padding: 50px;
+}
+
+.reviews_content {
+  text-align: left;
+  margin: auto;
+}
+
+.reviews_content div {
+  margin: 50px;
 }
 
 .reviews_images {
   border-radius: 50%;
+  width: 80px;
+  float: right;
+}
+
+.reviews_name {
+  display: block;
 }
 
 /* Contact page */
@@ -101,4 +155,63 @@ select,
 textarea {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+textarea {
+  height: 65%;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Product Specific Page */
+.product-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-specific_details a {
+  display: block;
+  margin: auto;
+  width: 76.367px;
+}
+
+.product-specific_price {
+  font-size: 1.5em;
+}
+
+.product-specific_details {
+  padding: 0px 30px;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image_thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 5px;
 }
