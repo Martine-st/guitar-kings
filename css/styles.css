@@ -185,11 +185,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1000px;
-  margin: 50auto;
+  margin: 50px auto;
   gap: 10px;
 }
 
 .featured h2 {
+  text-align: center;
   grid-column: -1/1;
 }
 
