@@ -1,0 +1,31 @@
+.product-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: 10px 10px 50px 10px;
+  flex-direction: column;
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-specific_details a {
+  display: block;
+  margin: auto;
+  width: 76.367px;
+}
+
+.product-specific_price {
+  font-size: 1.5em;
+}
+
+.product-specific_details {
+  padding: 0px 30px;
+}
+
+.product-image_thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 5px;
+}

@@ -1,0 +1,76 @@
+.welcome {
+  background: url("../images/home-header.jpg") no-repeat center bottom;
+  background-size: cover;
+  min-height: 70vh;
+  position: relative;
+}
+
+.welcome_content {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.selling-points {
+  margin: 50px auto;
+}
+
+.selling-points,
+.reviews_content {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.selling-points > *,
+.reviews_content > * {
+  flex: 1;
+}
+
+.selling-points h2 {
+  text-align: left;
+}
+
+.selling-points_images {
+  border-radius: 100px;
+}
+
+.reviews {
+  text-align: center;
+  padding: 50px;
+  background: #e8e8e8;
+}
+
+.reviews_content {
+  text-align: left;
+  margin: auto;
+}
+
+.reviews_content div {
+  margin: 20px;
+}
+
+.reviews_images {
+  border-radius: 50%;
+  width: 80px;
+  float: right;
+}
+
+.reviews_name {
+  display: block;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: 50px auto;
+  gap: 10px;
+}
+
+.featured h2 {
+  text-align: center;
+  grid-column: -1/1;
+}
